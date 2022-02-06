@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Calc area and perimeter", "Learning .Net\1. Calc area and perimeter.csproj", "{453CE33C-7D52-41C0-BA59-376E33333546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Finding biggest even", "2. Finding biggest even\2. Finding biggest even.csproj", "{E6C6195D-9203-4773-B899-9F0F1C7C50CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{453CE33C-7D52-41C0-BA59-376E33333546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453CE33C-7D52-41C0-BA59-376E33333546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453CE33C-7D52-41C0-BA59-376E33333546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453CE33C-7D52-41C0-BA59-376E33333546}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6C6195D-9203-4773-B899-9F0F1C7C50CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6C6195D-9203-4773-B899-9F0F1C7C50CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6C6195D-9203-4773-B899-9F0F1C7C50CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6C6195D-9203-4773-B899-9F0F1C7C50CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0C53659-34F1-4EF7-8635-CF4035D07065}
+	EndGlobalSection
+EndGlobal
