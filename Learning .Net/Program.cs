@@ -31,8 +31,7 @@ if (inputParam == areaParam)
     decimal area = firstRectangleSide * secondRectangleSide;
     Console.WriteLine($"Площадь прямоугольника = {area}");
 }
-else
-    if (inputParam == perimeterParam)
+else if (inputParam == perimeterParam)
 {
     Console.WriteLine($"Выбран параметр рассчета {perimeterParam}");
     decimal perimeter = 2 * (firstRectangleSide + secondRectangleSide);
