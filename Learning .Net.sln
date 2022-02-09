@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. Calc area and perimeter (using if)", "Learning .Net\1. Calc area and perimeter (using if).csproj", "{453CE33C-7D52-41C0-BA59-376E33333546}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1. CalcAreaAndPerimeter(UsingIf)", "Learning .Net\1. CalcAreaAndPerimeter(UsingIf).csproj", "{453CE33C-7D52-41C0-BA59-376E33333546}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. Finding biggest even (using if)", "2. Finding biggest even\2. Finding biggest even (using if).csproj", "{E6C6195D-9203-4773-B899-9F0F1C7C50CC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2. FindingBiggestEven(UsingIf)", "2. Finding biggest even\2. FindingBiggestEven(UsingIf).csproj", "{E6C6195D-9203-4773-B899-9F0F1C7C50CC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A231426E-173B-43ED-B473-3855A6A188DA}"
 	ProjectSection(SolutionItems) = preProject
@@ -14,7 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Switch case", "3. Switch case\3. Switch case.csproj", "{9F980853-7A18-4EA8-B482-30A1AEECB76B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3. SwitchCase", "3. Switch case\3. SwitchCase.csproj", "{9F980853-7A18-4EA8-B482-30A1AEECB76B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. TernaryOperator", "4. TernaryOperator\4. TernaryOperator.csproj", "{C67BB3AD-5255-4EA4-A4F8-D769074B5ACB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +36,10 @@ Global
 		{9F980853-7A18-4EA8-B482-30A1AEECB76B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F980853-7A18-4EA8-B482-30A1AEECB76B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F980853-7A18-4EA8-B482-30A1AEECB76B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67BB3AD-5255-4EA4-A4F8-D769074B5ACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67BB3AD-5255-4EA4-A4F8-D769074B5ACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67BB3AD-5255-4EA4-A4F8-D769074B5ACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67BB3AD-5255-4EA4-A4F8-D769074B5ACB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
