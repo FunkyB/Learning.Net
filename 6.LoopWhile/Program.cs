@@ -1,4 +1,12 @@
-﻿//Напишите программу, в которой получите целое число и используя циклическую
-//конструкцию выведите на экран консоли все числа от введенного и до нуля
-//включительно.
-
+﻿Console.WriteLine("Введите число");
+bool intX = int.TryParse(Console.ReadLine(), out int x);
+if (!intX)
+{
+    Console.WriteLine("Введено не челое число");
+    return;
+}
+do
+{
+    Console.WriteLine(--x);
+}
+while (x > 0);

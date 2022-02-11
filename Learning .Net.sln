@@ -20,7 +20,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.TernaryOperator", "4. Ter
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.TernaryOperator2", "TernaryOperator2\5.TernaryOperator2.csproj", "{981700E6-489F-4397-BEBB-5E40A3B3FB80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.LoopWhile", "6.LoopWhile\6.LoopWhile.csproj", "{80A5D196-B54F-4800-92AC-CD195DB564FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.LoopWhile", "6.LoopWhile\6.LoopWhile.csproj", "{80A5D196-B54F-4800-92AC-CD195DB564FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.LoopWhile2", "7.LoopWhile2\7.LoopWhile2.csproj", "{93CFBCDD-2CFF-4CEF-8E7E-6FCA5CDBD966}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,6 +54,10 @@ Global
 		{80A5D196-B54F-4800-92AC-CD195DB564FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80A5D196-B54F-4800-92AC-CD195DB564FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80A5D196-B54F-4800-92AC-CD195DB564FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93CFBCDD-2CFF-4CEF-8E7E-6FCA5CDBD966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93CFBCDD-2CFF-4CEF-8E7E-6FCA5CDBD966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93CFBCDD-2CFF-4CEF-8E7E-6FCA5CDBD966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93CFBCDD-2CFF-4CEF-8E7E-6FCA5CDBD966}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
