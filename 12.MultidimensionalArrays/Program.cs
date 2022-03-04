@@ -1,13 +1,4 @@
-﻿//Напишите программу, в которой создайте два двумерных массива, по логике
-//задачи реализующих математические матрицы. Размерность массивов получите
-//от пользователя. Размерность массивов должна быть таковой, чтобы обеспечить
-//возможность умножения этих матриц. На это ограничение нужно выполнить
-//проверку.
-//При прохождении проверки, заполните массивы данными, получая их от
-//пользователя.
-//Выведите на экран результат умножения матриц.
-
-int firstMatrixString, firstMatrixСolumn;
+﻿int firstMatrixString, firstMatrixСolumn;
 Console.WriteLine("Введите количество строк первой матрицы");
 firstMatrixString = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов первой матрицы");
@@ -19,27 +10,40 @@ secondMatrixString = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите количество столбцов второй матрицы");
 secondMatrixColumn = Convert.ToInt32(Console.ReadLine());
 
-bool canMupltiplyMatrix = firstMatrixСolumn == secondMatrixString;
-
 if (firstMatrixСolumn != secondMatrixString)
 {
     Console.WriteLine("Матрицы не согласованы, умножение невозможно");
     return;
 }
 
-decimal[,] firstMatrix = new decimal[firstMatrixString, firstMatrixСolumn];
-decimal[,] secondMatrix = new decimal[secondMatrixString, secondMatrixColumn];
-
+int[,] firstMatrix = new int[firstMatrixString, firstMatrixСolumn];
+int[,] secondMatrix = new int[secondMatrixString, secondMatrixColumn];
+Console.WriteLine("Заполните первую матрицу");
 for (int i = 0; i < firstMatrix.GetLength(0); i++)
     for (int j = 0; j < firstMatrix.GetLength(1); j++)
     {
-        Console.WriteLine("Введите значения в первую матрицу");
-        firstMatrix[i, j] = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine($"Y: " + (i + 1) + " X: " + (j + 1));
+        firstMatrix[i, j] = Convert.ToInt32(Console.ReadLine());
     }
-
+Console.WriteLine("Заполните вторую матрицу");
 for (int i = 0; i < secondMatrix.GetLength(0); i++)
     for (int j = 0; j < secondMatrix.GetLength(1); j++)
     {
-        Console.WriteLine("Введите значения во вторую матрицу");
-        secondMatrix[i, j] = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine($"Y: " + (i + 1) + " X: " + (j + 1));
+        secondMatrix[i, j] = Convert.ToInt32(Console.ReadLine());
     }
+Console.WriteLine();
+var resultMatrix = new int[firstMatrix.GetLength(0),secondMatrix.GetLength(1)];
+
+for (int i = 0; i < firstMatrix.GetLength(0); i++)
+{
+    for (int j = 0; j < secondMatrix.GetLength(1); j++)
+    {
+        for (int k = 0; k < secondMatrix.GetLength(0); k++)
+        {
+            resultMatrix[i, j] += firstMatrix[i, k] * secondMatrix[k, j];
+        }
+        Console.Write(resultMatrix[i, j] + "\t");
+    }
+    Console.WriteLine();
+}
