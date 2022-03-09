@@ -34,7 +34,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.MultidimensionalArrays",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13.MultidimensionalArrays2", "12.MultidimensionalArrays2\13.MultidimensionalArrays2.csproj", "{BE5B3037-BE1D-482F-840C-138851C76018}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.Methods", "13.Methods\14.Methods.csproj", "{B5BD23B3-6058-4EEF-B51B-7827E3B6083F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "14.Methods", "13.Methods\14.Methods.csproj", "{B5BD23B3-6058-4EEF-B51B-7827E3B6083F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15.MethodParams", "15.MethodParams\15.MethodParams.csproj", "{54296574-DCC6-4524-8205-D9B46ACAEEB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -94,6 +96,10 @@ Global
 		{B5BD23B3-6058-4EEF-B51B-7827E3B6083F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5BD23B3-6058-4EEF-B51B-7827E3B6083F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5BD23B3-6058-4EEF-B51B-7827E3B6083F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54296574-DCC6-4524-8205-D9B46ACAEEB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54296574-DCC6-4524-8205-D9B46ACAEEB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54296574-DCC6-4524-8205-D9B46ACAEEB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54296574-DCC6-4524-8205-D9B46ACAEEB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
