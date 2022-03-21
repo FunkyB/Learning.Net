@@ -1,57 +1,64 @@
-﻿Console.Write("Введите 3 целых числа: ");
-int[] userInput = new int[3];
-for (int i = 0; i < 3; i++)
+﻿namespace MethodParams
 {
-    Console.Write("Введите число №{0}:\r\n", i + 1);
-    userInput[i] = Convert.ToInt32(Console.ReadLine());
-}
-const string TrueParam = "Да";
-const string FalseParam = "Нет";
-bool additionalParam = true;
-Console.WriteLine($"Введите значение дополинтельного параметра, допустимые значения: {TrueParam} или {FalseParam}");
-string? additionalInputParam = Console.ReadLine();
-switch (additionalInputParam)
-{
-    case TrueParam:
-        additionalParam = true;
-        break;
-    case FalseParam:
-        additionalParam = false;
-        break;
-    default:
-        Console.WriteLine("Неправильное значение дополнительного параметра");
-        break;
-}
-static int SummUserInput(int[] userInput)
-{
-    int sum = 0;
-    for (int i = 0; i < 3; i++)
+    class Program
     {
-        sum += userInput[i];
+        static void Main(string[] args)
+        {
+            const string TrueParam = "Да";
+            const string FalseParam = "Нет";
+
+            Console.Write("Введите 3 целых числа: ");
+            int userInput = 0;
+            int firstInputParam = CollectUserInput(userInput);
+            int secondInputParam = CollectUserInput(userInput);
+            int thirdInputParam = CollectUserInput(userInput);
+            bool additionalParam = true;
+            Console.WriteLine($"Введите значение дополинтельного параметра, допустимые значения: {TrueParam} или {FalseParam}");
+            string? additionalInputParam = Console.ReadLine();
+            switch (additionalInputParam)
+            {
+                case TrueParam:
+                    additionalParam = true;
+                    break;
+                case FalseParam:
+                    additionalParam = false;
+                    break;
+                default:
+                    Console.WriteLine("Неправильное значение дополнительного параметра");
+                    break;
+            }
+
+            Console.WriteLine($"Результат выполнения метода №3: {ResultMethod(firstInputParam, secondInputParam, thirdInputParam, additionalParam)}");
+            Console.WriteLine($"Значения параметров: первое число - {firstInputParam}, второе число - {secondInputParam}, третье число - {thirdInputParam}, логический параметр - {additionalParam}");
+        }
+        static int CollectUserInput(int userInput)
+        {
+            Console.WriteLine("Введите число");
+            userInput = Convert.ToInt32(Console.ReadLine());
+            return userInput;
+        }
+
+        static int SummUserInput(int firstInputParam, int secondInputParam, int thirdInputParam)
+        {
+            int sum = firstInputParam + secondInputParam + thirdInputParam;
+            return sum;
+        }
+
+        static int RefIncrementSumm(ref int firstInputParam, int secondInputParam, int thirdInputParam)
+        {
+            firstInputParam++;
+            secondInputParam++;
+            thirdInputParam++;
+            int sum = firstInputParam + secondInputParam + thirdInputParam;
+            return sum;
+        }
+
+        static int ResultMethod(int firstInputParam, int secondInputParam, int thirdInputParam, bool additionalParam)
+        {
+            int result = additionalParam == true
+                ? SummUserInput(firstInputParam, secondInputParam, thirdInputParam)
+                : RefIncrementSumm(ref firstInputParam, secondInputParam, thirdInputParam);
+            return result;
+        }
     }
-    return sum;
 }
-static int RefIncrementSumm(ref int[] userInput)
-{
-    int sum = 0;
-    for (int i = 0; i < 3; i++)
-    {
-        userInput[i]++;
-        sum += userInput[i];
-    }
-    return sum;
-}
-static int ResultMethod(int[] userInput, bool additionalParam)
-{
-    if (additionalParam)
-    {
-        int result = SummUserInput(userInput);
-        return result;
-    }
-    else
-    {
-        int result = RefIncrementSumm(ref userInput);
-        return result;
-    }
-}
-Console.WriteLine($"Результат выполнения метода №3: {ResultMethod(userInput, additionalParam)}");
