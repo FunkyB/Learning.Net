@@ -16,19 +16,22 @@ public class MainClass
 {
     public static void Main()
     {
-        Console.WriteLine("Введите два числа через пробел: длина и ширина участка");
-        string line = Console.ReadLine();
-        string[] splitString = line.Split(' ');
+        while (true)
+        {
+            Console.WriteLine("Введите два числа через пробел: длина и ширина участка");
+            string line = Console.ReadLine();
+            string[] splitString = line.Split(' ');
 
-        double length = Convert.ToDouble(splitString[0]); // длина
-        double width = Convert.ToDouble(splitString[1]); // ширина
-        double landArea = 0;                             // переменная для площади
+            double length = Convert.ToDouble(splitString[0]); // длина
+            double width = Convert.ToDouble(splitString[1]); // ширина
+            double landArea = 0;                             // переменная для площади
 
-        length -= Math.Ceiling(length / 5) * 0.2;
-        width -= Math.Ceiling(width / 5) * 0.2;
-        Console.WriteLine($"Данные: {length}, {width}");
-        landArea = length * width;
+            length -= Math.Ceiling(length / 5) * 0.2;
+            width -= Math.Ceiling(width / 5) * 0.2;
+            Console.WriteLine($"Данные: {length}, {width}");
+            landArea = length * width;
 
-        Console.WriteLine($"Площадь участка: {Math.Round(landArea,2)}");
+            Console.WriteLine($"Площадь участка: {Math.Round(landArea, 2)}");
+        }        
     }
 }
