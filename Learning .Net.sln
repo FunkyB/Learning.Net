@@ -69,6 +69,7 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "001.BasicMethods3", "001.BasicMethods3\001.BasicMethods3.csproj", "{488FF504-A0BA-4787-876D-DD444426897B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "001.BasicMethods4", "001.BasicMethods4\001.BasicMethods4.csproj", "{3AA77B4A-C6F1-4564-B5D0-4110E28AFE40}"
+
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
