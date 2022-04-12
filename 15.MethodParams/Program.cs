@@ -1,4 +1,4 @@
-﻿namespace MethodParams
+﻿namespace _15.MethodParams
 {
     class Program
     {

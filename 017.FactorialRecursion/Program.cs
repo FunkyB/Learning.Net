@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace FactorialRecursion
+namespace _017.FactorialRecursion
 {
     class Program
     {
@@ -19,6 +19,6 @@ namespace FactorialRecursion
             return userInput;
         }
 
-       
+
     }
 }
