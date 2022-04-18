@@ -10,29 +10,24 @@ using System;
 
 public class MainClass
 {
-    //public static void Main()
-    //{
-    //    int firstNumber = int.Parse(Console.ReadLine());
-    //    int secondNumber = int.Parse(Console.ReadLine());
-
-    //    // Ваш код       
-
-
-    //}
     public static void Main()
     {
-        int firstNumber = int.Parse(Console.ReadLine());
-        //int secondNumber = int.Parse(Console.ReadLine());
+        string firstNumber = Console.ReadLine();
+        string secondNumber = Console.ReadLine();
+        int splitSize = 1;
+        int stringLength = firstNumber.Length;
+        int secondStringLength = secondNumber.Length;
 
-        Console.Write("\n");
-
-        for (int i = 0; i < firstNumber; i++)
+        for (int i = 0; i < stringLength; i += splitSize)
         {
-            for (int j = 0; j <= i; j++)
+            for (int j = 0; j < secondStringLength; j++)
             {
-                Console.Write(j);
+                if (firstNumber.Substring(i, splitSize) == secondNumber.Substring(j, splitSize))
+                {
+                    Console.Write($"{firstNumber.Substring(i, splitSize)} ");
+                    break;
+                }
             }
-            Console.Write("\n");
         }
     }
 }

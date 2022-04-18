@@ -25,30 +25,17 @@ public class MainClass
     {
         int height = int.Parse(Console.ReadLine());
 
-        //int spaces = 10;
-        int asterix = 0;
         for (int i = 0; i < height; i++)
         {
-
-            for (int j = 0; j < height  - 1; j++)
+            for (int x = 0; x < height - i - 1; x++)
             {
-                
-                    Console.Write("_");
+                Console.Write(" ");
             }
-            if (height % 2 != 0)
+            for (int y = 0; y < i * 2 + 1; y++)
             {
-                for (int j = 0; j <= asterix; j++)
-                {
-
-                    Console.Write("*");
-
-                }
+                Console.Write("*");
             }
-            
             Console.WriteLine();
-            asterix += 2;
-            height--;
         }
-
     }
 }
