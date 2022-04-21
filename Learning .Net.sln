@@ -84,6 +84,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCardMask", "CreditCar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareArrayAndObject", "CompareArrayAndObject\CompareArrayAndObject.csproj", "{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumMixedArray", "SumMixedArray\SumMixedArray.csproj", "{11A43DAD-764A-4897-8BD7-715E6A9DDD6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -238,6 +240,10 @@ Global
 		{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A43DAD-764A-4897-8BD7-715E6A9DDD6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A43DAD-764A-4897-8BD7-715E6A9DDD6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A43DAD-764A-4897-8BD7-715E6A9DDD6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A43DAD-764A-4897-8BD7-715E6A9DDD6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
