@@ -80,7 +80,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act3.3", "Act3.3\Act3.3.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act3.4", "Act3.4\Act3.4.csproj", "{54304973-64FD-4C32-886A-537686280914}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreditCardMask", "CreditCardMask\CreditCardMask.csproj", "{489CA431-C296-4627-A863-38EB0D95B387}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CreditCardMask", "CreditCardMask\CreditCardMask.csproj", "{489CA431-C296-4627-A863-38EB0D95B387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareArrayAndObject", "CompareArrayAndObject\CompareArrayAndObject.csproj", "{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -232,6 +234,10 @@ Global
 		{489CA431-C296-4627-A863-38EB0D95B387}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{489CA431-C296-4627-A863-38EB0D95B387}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{489CA431-C296-4627-A863-38EB0D95B387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A2C5FD6-8537-4231-A4DA-11715CFC7A1E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
