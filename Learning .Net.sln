@@ -88,6 +88,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumMixedArray", "SumMixedAr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaOrPerimeter", "AreaOrPerimeter\AreaOrPerimeter.csproj", "{09ED1D8C-BA5A-4F4A-A309-E6351EC37753}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NarcissisticNumbers", "NarcissisticNumbers\NarcissisticNumbers.csproj", "{814360F0-1FF3-480B-83DC-8DD887B39FBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -250,6 +252,10 @@ Global
 		{09ED1D8C-BA5A-4F4A-A309-E6351EC37753}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09ED1D8C-BA5A-4F4A-A309-E6351EC37753}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09ED1D8C-BA5A-4F4A-A309-E6351EC37753}.Release|Any CPU.Build.0 = Release|Any CPU
+		{814360F0-1FF3-480B-83DC-8DD887B39FBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{814360F0-1FF3-480B-83DC-8DD887B39FBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{814360F0-1FF3-480B-83DC-8DD887B39FBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{814360F0-1FF3-480B-83DC-8DD887B39FBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
