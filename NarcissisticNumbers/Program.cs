@@ -13,11 +13,11 @@
     {
         int numberOfDigits = n.ToString().Length;
         char [] intArray = n.ToString().ToCharArray();
-        int result = 0;
+        double result = 0;
         for (int i = 0; i < numberOfDigits; i++)
         {
             
-            result += Convert.ToInt32(intArray[i]) * numberOfDigits;
+            result += Math.Pow(Convert.ToInt32(intArray[i]), numberOfDigits);
 
             if (result == n)
             {
