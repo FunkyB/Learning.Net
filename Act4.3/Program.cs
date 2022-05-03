@@ -21,11 +21,26 @@ public class MainClass
     {
         string num1 = Console.ReadLine();
         string num2 = Console.ReadLine();
-        int [] num3 = num1.Substring()
 
+        int[] digitsArray1 = new int[num1.Length];
+        for (int i = 0; i < num1.Length; i++)
+        {
+            digitsArray1[i] = Convert.ToInt32(Char.GetNumericValue(num1[i]));
+        }
 
-        // Ваш код       
-
-
+        int[] digitsArray2 = new int[num2.Length];
+        for (int i = 0; i < num2.Length; i++)
+        {
+            digitsArray2[i] = Convert.ToInt32(Char.GetNumericValue(num2[i]));
+        }
+        int counter = 0;        
+        for (int i = 0; i < digitsArray1.Length; i++)
+        {
+            if (digitsArray1[i] == digitsArray2[i])
+            {
+                counter++;
+            }
+        }
+        Console.WriteLine($"Совпадение {counter} элементов");
     }
 }
