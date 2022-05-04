@@ -22,11 +22,20 @@ public class MainClass
         string num1 = Console.ReadLine();
         string num2 = Console.ReadLine();
 
-        char [] test = num1.ToCharArray();
-        char [] test3 = test.Distinct().ToArray();
-        char [] test2 = num2.ToCharArray();
+        int count = 0;
 
-        var result = test3.Except(test2.Union(test2.Except(test3)));
-        Console.WriteLine(string.Join(' ', result));
+        foreach (var c in num1)
+        {
+            foreach (var n in num2)
+            {
+                if (c == n)
+                {
+                    count++;
+                    break;
+                }
+                Console.WriteLine($"Уникально число {c}");
+                break;
+            }
+        }
     }
 }
