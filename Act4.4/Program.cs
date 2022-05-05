@@ -26,6 +26,7 @@ public class MainClass
 
         foreach (var c in num1)
         {
+            
             foreach (var n in num2)
             {
                 if (c == n)
@@ -33,9 +34,9 @@ public class MainClass
                     count++;
                     break;
                 }
-                Console.WriteLine($"Уникально число {c}");
                 break;
             }
+            Console.WriteLine(c);
         }
     }
 }
