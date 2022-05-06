@@ -90,7 +90,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaOrPerimeter", "AreaOrPe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NarcissisticNumbers", "NarcissisticNumbers\NarcissisticNumbers.csproj", "{814360F0-1FF3-480B-83DC-8DD887B39FBB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beginner - Lost Without a Map", "Beginner - Lost Without a Map\Beginner - Lost Without a Map.csproj", "{13D468F7-79D1-4F68-BEB9-FD01829903AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beginner - Lost Without a Map", "Beginner - Lost Without a Map\Beginner - Lost Without a Map.csproj", "{13D468F7-79D1-4F68-BEB9-FD01829903AB}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act4", "Act4\Act4.csproj", "{83FC1367-0C30-438A-9342-223079D9D15D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act4.1", "Act4.1\Act4.1.csproj", "{BE590444-9166-43A9-A00C-6224AAD7551A}"
@@ -107,13 +108,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act4.6", "Act4.6\Act4.6.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act4.7", "Act4.7\Act4.7.csproj", "{BDE7A191-D71C-4073-8D3B-038D5DFC989E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5", "Act5\Act5.csproj", "{617A5D05-A4CE-4A16-84E3-21EEC3AC5DF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5", "Act5\Act5.csproj", "{617A5D05-A4CE-4A16-84E3-21EEC3AC5DF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5.1", "Act5.1\Act5.1.csproj", "{A7E843DA-6A9F-4669-AD80-BBA6D6D574FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5.1", "Act5.1\Act5.1.csproj", "{A7E843DA-6A9F-4669-AD80-BBA6D6D574FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5.2", "Act5.2\Act5.2.csproj", "{537E0711-49FF-4657-8473-C99894AE5841}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5.2", "Act5.2\Act5.2.csproj", "{537E0711-49FF-4657-8473-C99894AE5841}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5.3", "Act5.3\Act5.3.csproj", "{751F42C9-3993-46B1-8A53-E43CD0A0094A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5.3", "Act5.3\Act5.3.csproj", "{751F42C9-3993-46B1-8A53-E43CD0A0094A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5.4", "Act5.4\Act5.4.csproj", "{FA19A1FC-CA1E-4BB1-B705-D63CD16503A3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -333,6 +336,10 @@ Global
 		{751F42C9-3993-46B1-8A53-E43CD0A0094A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{751F42C9-3993-46B1-8A53-E43CD0A0094A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{751F42C9-3993-46B1-8A53-E43CD0A0094A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA19A1FC-CA1E-4BB1-B705-D63CD16503A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA19A1FC-CA1E-4BB1-B705-D63CD16503A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA19A1FC-CA1E-4BB1-B705-D63CD16503A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA19A1FC-CA1E-4BB1-B705-D63CD16503A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
