@@ -16,30 +16,41 @@
 //Sample Output:
 //2331
 
+//посчитать кол-во элементов для массива
+//создать массив
+//заполнить массив изначальными значениями (сразу с возведением в куб)
+
 int startValue = int.Parse(Console.ReadLine());
 int endValue = int.Parse(Console.ReadLine());
 PrintSum(GetCubes(startValue, endValue));
 
 int [] GetCubes (int startValue, int endValue)
 {
-    Range range = new Range(startValue, endValue);
     int counter = 0;
-    int[] array = new int[22];
     for (int i = startValue; i <= endValue; i++)
     {
-        //array[i] = Math.Pow(i, 3);
-        counter++;
+       counter++;
     }
 
-    
-    for (int i = 0; i <= counter; i++)
+    int[] array = new int[counter];
+    for (int i = 0; i < array.Length; i++)
     {
-        array[i] = (int)Math.Pow(i, 3);
+        
+        for (int j = startValue; j <= endValue; j++)
+        {
+            array[i] = (int)Math.Pow(j, 3);
+            i++;
+        }
     }
     return array;
 }
 
 void PrintSum (int [] sum)
 {
-    Console.WriteLine(sum);
+    int result = 0;
+    for (int i = 0; i < sum.Length; i++)
+    {
+        result = result + sum[i];
+    }
+    Console.WriteLine(result);
 }
