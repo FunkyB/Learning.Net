@@ -30,21 +30,28 @@ VasyaStyle(number);
 
 static void VasyaStyle(int number)
 {
-    List<char> validNumbers = new List<char>{ '2','3','7' };
-    for (int i = 1; i < number; i++)
+    List<int> validNumbers = new List<int> { 2, 3, 7 };
+    Random rnd = new Random();
+    List<int> testList = new();
+    for (int i = 0; i < 100; i++)
     {
-        if (validNumbers.Contains(Convert.ToChar(i.ToString())))
-        {
-            for (int j = 1; j < number; j++)
-            {
-                for (int z = 1; z < number; z++)
-                {
-                    if (i * j + z == number)
-                    {
-                        Console.WriteLine($"{number} = {i} * {j} + {z}");
-                    }
-                }
-            }
-        }
+        testList.Add(rnd.Next(i));
     }
+    Console.ReadKey();
+    //for (int i = 1; i < number; i++)
+    //{
+    //    if (validNumbers.Contains(i))
+    //    for (int j = 1; j < number; j++)
+    //    {
+    //        for (int z = 1; z < number; z++)
+    //        {
+    //            if (i * j + z == number)
+    //            {
+    //                Console.WriteLine($"{number} = {i} * {j} + {z}");
+    //            }
+    //            j++;
+    //        }
+    //        i++;
+    //    }
+    //}
 }
