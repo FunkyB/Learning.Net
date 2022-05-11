@@ -30,9 +30,12 @@ public class Program
         int number = int.Parse(Console.ReadLine());
         VasyaStyle(number);
     }
+
+    private static bool IsVasyaStyleNumber(int number) => number.ToString().All(x => x == '2' || x == '3' || x == '7');
+
     static void VasyaStyle(int number)
     {
-        List<int> outputNumbers = new List<int>();
+        //List<int> outputNumbers = new List<int>();
         for (int i = 1; i < number; i++)
         {
             if (IsVasyaStyleNumber(i))
@@ -42,21 +45,15 @@ public class Program
                     if (IsVasyaStyleNumber(j))
                     {
                         for (int z = 1; z < number; z++)
-                        {                            
-                            if (IsVasyaStyleNumber(z))
-                            {                                
-                                if (i * j + z == number && !outputNumbers.Contains(z))
-                                {
-                                    outputNumbers.Add(z);
-                                    Console.WriteLine($"{number} = {i} * {j} + {z}");
-                                }
+                        {
+                            if (IsVasyaStyleNumber(z) && i * j + z == number)
+                            {
+                                Console.WriteLine($"{number} = {i} * {j} + {z}");
                             }
                         }
                     }
                 }
             }
-
         }
     }
-    private static bool IsVasyaStyleNumber(int number) => number.ToString().All(x => x == '2' || x == '3' || x == '7');
 }
