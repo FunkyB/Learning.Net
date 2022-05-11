@@ -32,6 +32,7 @@ public class Program
     }
     static void VasyaStyle(int number)
     {
+        List<int> outputNumbers = new List<int>();
         for (int i = 1; i < number; i++)
         {
             if (IsVasyaStyleNumber(i))
@@ -41,11 +42,12 @@ public class Program
                     if (IsVasyaStyleNumber(j))
                     {
                         for (int z = 1; z < number; z++)
-                        {
+                        {                            
                             if (IsVasyaStyleNumber(z))
-                            {
-                                if (i * j + z == number)
+                            {                                
+                                if (i * j + z == number && !outputNumbers.Contains(z))
                                 {
+                                    outputNumbers.Add(z);
                                     Console.WriteLine($"{number} = {i} * {j} + {z}");
                                 }
                             }
