@@ -23,35 +23,38 @@
 //26478 = 37 * 73 + 23777
 //26478 = 72 * 323 + 3222
 
-using System.Linq;
-
-int number = int.Parse(Console.ReadLine());
-VasyaStyle(number);
-
-static void VasyaStyle(int number)
+public class Program
 {
-    List<int> validNumbers = new List<int> { 2, 3, 7 };
-    Random rnd = new Random();
-    List<int> testList = new();
-    for (int i = 0; i < 100; i++)
+    public static void Main()
     {
-        testList.Add(rnd.Next(i));
+        int number = int.Parse(Console.ReadLine());
+        VasyaStyle(number);
     }
-    Console.ReadKey();
-    //for (int i = 1; i < number; i++)
-    //{
-    //    if (validNumbers.Contains(i))
-    //    for (int j = 1; j < number; j++)
-    //    {
-    //        for (int z = 1; z < number; z++)
-    //        {
-    //            if (i * j + z == number)
-    //            {
-    //                Console.WriteLine($"{number} = {i} * {j} + {z}");
-    //            }
-    //            j++;
-    //        }
-    //        i++;
-    //    }
-    //}
+    static void VasyaStyle(int number)
+    {
+        for (int i = 1; i < number; i++)
+        {
+            if (IsVasyaStyleNumber(i))
+            {
+                for (int j = 1; j < number; j++)
+                {
+                    if (IsVasyaStyleNumber(j))
+                    {
+                        for (int z = 1; z < number; z++)
+                        {
+                            if (IsVasyaStyleNumber(z))
+                            {
+                                if (i * j + z == number)
+                                {
+                                    Console.WriteLine($"{number} = {i} * {j} + {z}");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    private static bool IsVasyaStyleNumber(int number) => number.ToString().All(x => x == '2' || x == '3' || x == '7');
 }
