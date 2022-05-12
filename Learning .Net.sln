@@ -118,11 +118,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5.3", "Act5.3\Act5.3.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5.4", "Act5.4\Act5.4.csproj", "{FA19A1FC-CA1E-4BB1-B705-D63CD16503A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5.5", "Act5.5\Act5.5.csproj", "{F5BCF8CE-9687-43F3-84BA-1CDFD5696045}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5.5", "Act5.5\Act5.5.csproj", "{F5BCF8CE-9687-43F3-84BA-1CDFD5696045}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act5.6", "Act5.6\Act5.6.csproj", "{AA4158BD-4EAC-4B87-A84B-4C5256343B74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5.6", "Act5.6\Act5.6.csproj", "{AA4158BD-4EAC-4B87-A84B-4C5256343B74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Act3.5", "Act3.5\Act3.5.csproj", "{05DB6DB5-9721-4CA5-9A4B-1845A600E7DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act3.5", "Act3.5\Act3.5.csproj", "{05DB6DB5-9721-4CA5-9A4B-1845A600E7DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disemvowel Trolls", "Disemvowel Trolls\Disemvowel Trolls.csproj", "{07451AE7-EBC2-4296-A862-FD942EF27D8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -358,6 +360,10 @@ Global
 		{05DB6DB5-9721-4CA5-9A4B-1845A600E7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05DB6DB5-9721-4CA5-9A4B-1845A600E7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05DB6DB5-9721-4CA5-9A4B-1845A600E7DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07451AE7-EBC2-4296-A862-FD942EF27D8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07451AE7-EBC2-4296-A862-FD942EF27D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07451AE7-EBC2-4296-A862-FD942EF27D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07451AE7-EBC2-4296-A862-FD942EF27D8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

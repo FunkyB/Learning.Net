@@ -23,35 +23,45 @@
 //26478 = 37 * 73 + 23777
 //26478 = 72 * 323 + 3222
 
-using System.Linq;
-
-int number = int.Parse(Console.ReadLine());
-VasyaStyle(number);
-
-static void VasyaStyle(int number)
+public class Program
 {
-    List<int> validNumbers = new List<int> { 2, 3, 7 };
-    Random rnd = new Random();
-    List<int> testList = new();
-    for (int i = 0; i < 100; i++)
+    public static void Main()
     {
-        testList.Add(rnd.Next(i));
+        int number = int.Parse(Console.ReadLine());
+        VasyaStyle(GetVasyaStyleNumbers(number), number);
     }
-    Console.ReadKey();
-    //for (int i = 1; i < number; i++)
-    //{
-    //    if (validNumbers.Contains(i))
-    //    for (int j = 1; j < number; j++)
-    //    {
-    //        for (int z = 1; z < number; z++)
-    //        {
-    //            if (i * j + z == number)
-    //            {
-    //                Console.WriteLine($"{number} = {i} * {j} + {z}");
-    //            }
-    //            j++;
-    //        }
-    //        i++;
-    //    }
-    //}
+
+    private static bool IsVasyaStyleNumber(int number) => number.ToString().All(x => x == '2' || x == '3' || x == '7');
+
+    private static List<int> GetVasyaStyleNumbers (int number)
+    {
+        var vasyaNumbers = new List<int>();
+        for (int i = 0; i < number; i++)
+        {
+            if (IsVasyaStyleNumber(i) && !vasyaNumbers.Contains(i))
+            {
+                vasyaNumbers.Add(i);
+            }
+        }
+        return vasyaNumbers;
+    }
+
+    static void VasyaStyle(List<int> vasyaNumbers, int number)
+    {
+        var outputNumbers = new List<int>();
+        foreach (int i in vasyaNumbers)
+        {
+            foreach (int j in vasyaNumbers)
+            {
+                foreach (int z in vasyaNumbers)
+                {
+                    if (i * j + z == number && !outputNumbers.Contains(z))
+                    {
+                        outputNumbers.Add(z);
+                        Console.WriteLine($"{number} = {i} * {j} + {z}");
+                    }
+                }
+            }
+        }
+    }
 }
