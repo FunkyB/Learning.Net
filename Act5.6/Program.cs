@@ -28,29 +28,37 @@ public class Program
     public static void Main()
     {
         int number = int.Parse(Console.ReadLine());
-        VasyaStyle(number);
+        VasyaStyle(GetVasyaStyleNumbers(number), number);
     }
 
     private static bool IsVasyaStyleNumber(int number) => number.ToString().All(x => x == '2' || x == '3' || x == '7');
 
-    static void VasyaStyle(int number)
+    private static List<int> GetVasyaStyleNumbers (int number)
     {
-        //List<int> outputNumbers = new List<int>();
-        for (int i = 1; i < number; i++)
+        var vasyaNumbers = new List<int>();
+        for (int i = 0; i < number; i++)
         {
-            if (IsVasyaStyleNumber(i))
+            if (IsVasyaStyleNumber(i) && !vasyaNumbers.Contains(i))
             {
-                for (int j = 1; j < number; j++)
+                vasyaNumbers.Add(i);
+            }
+        }
+        return vasyaNumbers;
+    }
+
+    static void VasyaStyle(List<int> vasyaNumbers, int number)
+    {
+        var outputNumbers = new List<int>();
+        foreach (int i in vasyaNumbers)
+        {
+            foreach (int j in vasyaNumbers)
+            {
+                foreach (int z in vasyaNumbers)
                 {
-                    if (IsVasyaStyleNumber(j))
+                    if (i * j + z == number && !outputNumbers.Contains(z))
                     {
-                        for (int z = 1; z < number; z++)
-                        {
-                            if (IsVasyaStyleNumber(z) && i * j + z == number)
-                            {
-                                Console.WriteLine($"{number} = {i} * {j} + {z}");
-                            }
-                        }
+                        outputNumbers.Add(z);
+                        Console.WriteLine($"{number} = {i} * {j} + {z}");
                     }
                 }
             }
