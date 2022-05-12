@@ -124,7 +124,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act5.6", "Act5.6\Act5.6.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Act3.5", "Act3.5\Act3.5.csproj", "{05DB6DB5-9721-4CA5-9A4B-1845A600E7DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disemvowel Trolls", "Disemvowel Trolls\Disemvowel Trolls.csproj", "{07451AE7-EBC2-4296-A862-FD942EF27D8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disemvowel Trolls", "Disemvowel Trolls\Disemvowel Trolls.csproj", "{07451AE7-EBC2-4296-A862-FD942EF27D8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse words", "Reverse words\Reverse words.csproj", "{6E681567-5503-4E7A-8C60-C55E6E133794}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -364,6 +366,10 @@ Global
 		{07451AE7-EBC2-4296-A862-FD942EF27D8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07451AE7-EBC2-4296-A862-FD942EF27D8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07451AE7-EBC2-4296-A862-FD942EF27D8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E681567-5503-4E7A-8C60-C55E6E133794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E681567-5503-4E7A-8C60-C55E6E133794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E681567-5503-4E7A-8C60-C55E6E133794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E681567-5503-4E7A-8C60-C55E6E133794}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
