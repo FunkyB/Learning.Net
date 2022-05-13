@@ -22,21 +22,29 @@ public class MainClass
         string num1 = Console.ReadLine();
         string num2 = Console.ReadLine();
 
-        int count = 0;
-
-        foreach (var c in num1)
+        var compareLists = InputToList(RemoveDuplicateItems(num1)).Except(InputToList(RemoveDuplicateItems(num2))).ToList();
+        foreach (char item in compareLists)
         {
-            
-            foreach (var n in num2)
-            {
-                if (c == n)
-                {
-                    count++;
-                    break;
-                }
-                break;
-            }
-            Console.WriteLine(c);
+            Console.WriteLine($"Уникально число {item}");
         }
+    }
+    private static List<int> InputToList(string input)
+    {
+        var numList = new List<int>();
+        foreach (var item in input)
+        {
+            numList.Add(item);
+        }
+        return numList;
+    }
+
+    private static string RemoveDuplicateItems(string input)
+    {
+        var duplicateItems = input.GroupBy(x => x).Where(x => x.Count() > 1).Select(x => x.Key);
+        foreach (var item in duplicateItems)
+        {
+            input = input.Replace(item.ToString(), "");
+        }
+        return input;
     }
 }
