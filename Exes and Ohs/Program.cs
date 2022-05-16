@@ -12,19 +12,24 @@
 
 using System.Linq;
 using System;
-public static class Kata
+public static class Program
 {
-    public static void GetXO()
+    public static void Main()
     {
-        XO("xo");
-        XO("xxOo");
-        XO("xxxm");
-        XO("Oo");
-        XO("ooom");
+        GetXOAmount("xo");
+        GetXOAmount("xxOo");
+        GetXOAmount("xxxm");
+        GetXOAmount("Oo");
+        GetXOAmount("ooom");
+        GetXOAmount("zpzpzpp");
     }
    
-    public static bool XO(string input)
-    {
-        return input.
-  }
+    public static bool GetXOAmount(string input)
+    {       
+        if(!input.ToLower().Contains('x') && !input.ToLower().Contains('o'))
+        {
+            return true;
+        }
+        return input.ToLower().Count(x => x == 'x') == input.ToLower().Count(x => x == 'o');
+    }
 }
