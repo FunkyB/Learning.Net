@@ -33,19 +33,11 @@ public class MainClass
         }
     }
 
-    private static List<int> GetIntList(string input)
-    {
-        var numList = new List<int>();
-        return input.Select(x => (int)x).ToList();
-    }
+    private static List<int> GetIntList(string input) => input.Select(x => (int)x).ToList();
 
-    private static string GetDeduplicateList(string input)
-    {
-        var deduplicateItems = new string(
-        input.GroupBy(x => x)
-        .Where(x => x.Count() == 1)
+    private static string GetDeduplicateList(string input) => new(input.GroupBy(x => x)
+        .Where(x => x
+        .Count() == 1)
         .Select(x => x.Key)
         .ToArray());
-        return deduplicateItems;
-    }
 }
