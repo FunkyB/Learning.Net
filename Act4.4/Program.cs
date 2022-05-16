@@ -21,22 +21,23 @@ public class MainClass
     {
         string num1 = Console.ReadLine();
         string num2 = Console.ReadLine();
+        num1 = GetDeduplicateList(num1);
+        num2 = GetDeduplicateList(num2);
+        var num1List = GetIntList(num1);
+        var num2List = GetIntList(num2);
+        var compareLists = num1List.Except(num2List).ToList();
 
-        int count = 0;
-
-        foreach (var c in num1)
+        foreach (char item in compareLists)
         {
-            
-            foreach (var n in num2)
-            {
-                if (c == n)
-                {
-                    count++;
-                    break;
-                }
-                break;
-            }
-            Console.WriteLine(c);
+            Console.WriteLine($"Уникально число {item}");
         }
     }
+
+    private static List<int> GetIntList(string input) => input.Select(x => (int)x).ToList();
+
+    private static string GetDeduplicateList(string input) => new(input.GroupBy(x => x)
+        .Where(x => x
+        .Count() == 1)
+        .Select(x => x.Key)
+        .ToArray());
 }
