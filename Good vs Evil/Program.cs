@@ -30,40 +30,50 @@
 //Return "Battle Result: Good triumphs over Evil" if good wins, "Battle Result: Evil eradicates all trace of Good"
 //if evil wins, or "Battle Result: No victor on this battle field" if it ends in a tie.
 
-GoodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0");
-GoodVsEvil("1 1 1 1 1 1", "1 1 1 1 1 1 1");
-GoodVsEvil("1 0 0 0 0 0", "1 0 0 0 0 0 0");
+Console.WriteLine(GoodVsEvil("0 0 0 0 0 10 1", "0 1 1 1 1 0 0"));
+Console.WriteLine(GoodVsEvil("0 0 0 0 0 10", "0 1 1 1 1 0 0 1"));
+Console.WriteLine(GoodVsEvil("1 1 1 1 1 1", "1 1 1 1 1 1 1"));
+Console.WriteLine(GoodVsEvil("1 0 0 0 0 0", "1 0 0 0 0 0 0"));
 
 static string GoodVsEvil(string good, string evil)
 {
-    const int Hobbits = 1, Men = 2, Elves = 3, Dwarves = 3, Eagles = 4, Wizards = 10;
-    const int Orcs = 1, Wargs = 2, Goblins = 2, UrukHai = 3, Trolls = 5;
-    var goodRacesList = new List<int>() { Hobbits, Men, Elves, Dwarves, Eagles, Wizards };
-    var evilRacesList = new List<int>() { Orcs, Men, Wargs, Goblins, UrukHai, Trolls, Wizards };
+    const int HobbitsPower = 1, MenPower = 2, ElvesPower = 3, DwarvesPower = 3, EaglesPower = 4, WizardsPower = 10;
+    const int OrcsPower = 1, WargsPower = 2, GoblinsPower = 2, UrukHaiPower = 3, TrollsPower = 5;
+    var goodForcesPower = new List<int>() { HobbitsPower, MenPower, ElvesPower, DwarvesPower, EaglesPower, WizardsPower };
+    var evilForcesPower = new List<int>() { OrcsPower, MenPower, WargsPower, GoblinsPower, UrukHaiPower, TrollsPower, WizardsPower };
 
-    var goodForces = ForcesToList(good);
-    var evilForces = ForcesToList(evil);
+    var goodForcesAmount = ForcesToList(good);
+    if (goodForcesAmount.Count != 6)
+    {
+        return "Invalid good forces amount";
+    }
 
-    if(ForcesCount(goodForces, goodRacesList) == ForcesCount(evilForces, evilRacesList))
+    var evilForcesAmount = ForcesToList(evil);
+    if (evilForcesAmount.Count != 7)
+    {
+        return "Invalid evil forces amount";
+    }
+
+    if (ForcesCount(goodForcesAmount, goodForcesPower) == ForcesCount(evilForcesAmount, evilForcesPower))
     {
         return "Battle Result: No victor on this battle field";
     }
-    return ForcesCount(goodForces, goodRacesList) > ForcesCount(evilForces, evilRacesList)
+    return ForcesCount(goodForcesAmount, goodForcesPower) > ForcesCount(evilForcesAmount, evilForcesPower)
         ? "Battle Result: Good triumphs over Evil" 
         : "Battle Result: Evil eradicates all trace of Good";
 }
 
 static List<int> ForcesToList(string forces) => forces.Split(" ").Select(x => int.Parse(x)).ToList();
 
-static int ForcesCount(List<int> ForcesList, List<int> racesList)
+static int ForcesCount(List<int> forcesList, List<int> racesPower)
 { 
     var sum = 0;
     var counter = 0;
-    foreach (var item in ForcesList)
+    foreach (var item in forcesList)
     {
         if (item != 0)
         {
-            sum += item * racesList[counter];
+            sum += item * racesPower[counter];
         }
         counter++;
     }
