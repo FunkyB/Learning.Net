@@ -132,8 +132,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NoobCoding", "NoobCoding", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CodeWars", "CodeWars", "{A170AC26-32C9-499B-BA8C-28DDE337D80B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exes and Ohs", "Exes and Ohs\Exes and Ohs.csproj", "{96378BEF-5D7A-45C1-B362-12186A25F7D0}"
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reverse words", "Reverse words\Reverse words.csproj", "{6E681567-5503-4E7A-8C60-C55E6E133794}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exes and Ohs", "Exes and Ohs\Exes and Ohs.csproj", "{96378BEF-5D7A-45C1-B362-12186A25F7D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reverse words", "Reverse words\Reverse words.csproj", "{6E681567-5503-4E7A-8C60-C55E6E133794}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "How good are you really", "How good are you really\How good are you really.csproj", "{9CB09580-8608-47D3-9648-26018F47B035}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Is a number prime", "Is a number prime\Is a number prime.csproj", "{9DBF56B6-51C1-48FB-8B65-B9719162B2D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Good vs Evil", "Good vs Evil\Good vs Evil.csproj", "{264E7619-5B24-4101-AD52-C019B7860030}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Convert number to reversed array of digits", "Convert number to reversed array of digits\Convert number to reversed array of digits.csproj", "{5AE330EA-C673-42E6-883A-769B0D1CC9D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -381,6 +390,22 @@ Global
 		{6E681567-5503-4E7A-8C60-C55E6E133794}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E681567-5503-4E7A-8C60-C55E6E133794}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E681567-5503-4E7A-8C60-C55E6E133794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CB09580-8608-47D3-9648-26018F47B035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CB09580-8608-47D3-9648-26018F47B035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CB09580-8608-47D3-9648-26018F47B035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CB09580-8608-47D3-9648-26018F47B035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DBF56B6-51C1-48FB-8B65-B9719162B2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DBF56B6-51C1-48FB-8B65-B9719162B2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DBF56B6-51C1-48FB-8B65-B9719162B2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DBF56B6-51C1-48FB-8B65-B9719162B2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{264E7619-5B24-4101-AD52-C019B7860030}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{264E7619-5B24-4101-AD52-C019B7860030}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{264E7619-5B24-4101-AD52-C019B7860030}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{264E7619-5B24-4101-AD52-C019B7860030}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE330EA-C673-42E6-883A-769B0D1CC9D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE330EA-C673-42E6-883A-769B0D1CC9D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE330EA-C673-42E6-883A-769B0D1CC9D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE330EA-C673-42E6-883A-769B0D1CC9D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -445,6 +470,10 @@ Global
 		{05DB6DB5-9721-4CA5-9A4B-1845A600E7DF} = {A93F99F3-12E1-4C4E-B681-6AA694DDD9BC}
 		{07451AE7-EBC2-4296-A862-FD942EF27D8D} = {A170AC26-32C9-499B-BA8C-28DDE337D80B}
 		{96378BEF-5D7A-45C1-B362-12186A25F7D0} = {A170AC26-32C9-499B-BA8C-28DDE337D80B}
+		{9CB09580-8608-47D3-9648-26018F47B035} = {A170AC26-32C9-499B-BA8C-28DDE337D80B}
+		{9DBF56B6-51C1-48FB-8B65-B9719162B2D1} = {A170AC26-32C9-499B-BA8C-28DDE337D80B}
+		{264E7619-5B24-4101-AD52-C019B7860030} = {A170AC26-32C9-499B-BA8C-28DDE337D80B}
+		{5AE330EA-C673-42E6-883A-769B0D1CC9D6} = {A170AC26-32C9-499B-BA8C-28DDE337D80B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B0C53659-34F1-4EF7-8635-CF4035D07065}
